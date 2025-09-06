@@ -53,7 +53,7 @@ This repository contains Terraform configuration to create BigQuery datasets in 
 
 | Name | Description | Type | Default |
 |------|-------------|------|---------|
-| project_id | The GCP project ID | string | "zono-test-471300" |
+| project_id | The GCP project ID | string | (required) |
 | region | The GCP region | string | "asia-northeast1" |
 | dataset_ids | List of BigQuery dataset IDs to create | list(string) | ["src_common", "stg_common", "dwh_common", "dm_common"] |
 
