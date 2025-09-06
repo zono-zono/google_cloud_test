@@ -1,7 +1,7 @@
 variable "project_id" {
   description = "The GCP project ID"
   type        = string
-  default     = "zono-test-471300"
+  # No default value for security - must be provided via terraform.tfvars or environment variable
 }
 
 variable "region" {

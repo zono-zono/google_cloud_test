@@ -64,6 +64,21 @@ This configuration creates:
 - All datasets are created in the specified region
 - Datasets are configured to delete contents on destroy
 
-## Security Note
+## Security Notes
 
-Never commit `terraform.tfvars` files to version control as they may contain sensitive information.
+- **Never commit `terraform.tfvars` files** to version control as they contain sensitive information
+- **No default project ID** is set for security - you must provide your own project ID
+- **Use environment variables** for sensitive values in CI/CD pipelines:
+  ```bash
+  export TF_VAR_project_id="your-project-id"
+  ```
+
+## Alternative: Environment Variables
+
+Instead of using `terraform.tfvars`, you can set variables via environment variables:
+
+```bash
+export TF_VAR_project_id="your-project-id"
+export TF_VAR_region="asia-northeast1"
+terraform apply
+```

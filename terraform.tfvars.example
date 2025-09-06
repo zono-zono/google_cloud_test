@@ -1,7 +1,7 @@
 # Copy this file to terraform.tfvars and customize for your environment
 # terraform.tfvars is automatically ignored by git
 
-project_id = "zono-test-471300"
+project_id = "your-project-id-here"
 region     = "asia-northeast1"
 
 dataset_ids = [
