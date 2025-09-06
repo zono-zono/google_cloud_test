@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and customize for your environment
+# terraform.tfvars is automatically ignored by git
+
+project_id = "zono-test-471300"
+region     = "asia-northeast1"
+
+dataset_ids = [
+  "src_common",
+  "stg_common", 
+  "dwh_common",
+  "dm_common"
+]

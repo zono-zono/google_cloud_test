@@ -8,20 +8,15 @@ terraform {
 }
 
 provider "google" {
-  project = "zono-test-471300"
+  project = var.project_id
 }
 
 resource "google_bigquery_dataset" "dataset" {
-  for_each = toset([
-    "src_common",
-    "stg_common",
-    "dwh_common",
-    "dm_common"
-  ])
+  for_each = toset(var.dataset_ids)
 
   dataset_id                 = each.key
   friendly_name              = each.key
   description                = format("The %s dataset", each.key)
-  location                   = "asia-northeast1"
+  location                   = var.region
   delete_contents_on_destroy = true
 }
