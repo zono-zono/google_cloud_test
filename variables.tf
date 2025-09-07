@@ -13,5 +13,5 @@ variable "region" {
 variable "dataset_ids" {
   description = "List of BigQuery dataset IDs to create"
   type        = list(string)
-  default     = ["src_common", "stg_common", "dwh_common", "dm_common"]
+  default     = ["src_common", "stg_common", "dwh_common", "dm_common", "src_ga4"]
 }

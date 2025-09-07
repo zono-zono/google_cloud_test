@@ -8,5 +8,6 @@ dataset_ids = [
   "src_common",
   "stg_common", 
   "dwh_common",
-  "dm_common"
+  "dm_common",
+  "src_ga4"
 ]

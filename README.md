@@ -55,12 +55,12 @@ This repository contains Terraform configuration to create BigQuery datasets in 
 |------|-------------|------|---------|
 | project_id | The GCP project ID | string | (required) |
 | region | The GCP region | string | "asia-northeast1" |
-| dataset_ids | List of BigQuery dataset IDs to create | list(string) | ["src_common", "stg_common", "dwh_common", "dm_common"] |
+| dataset_ids | List of BigQuery dataset IDs to create | list(string) | ["src_common", "stg_common", "dwh_common", "dm_common", "src_ga4"] |
 
 ## Resources
 
 This configuration creates:
-- 4 BigQuery datasets (src_common, stg_common, dwh_common, dm_common)
+- 5 BigQuery datasets (src_common, stg_common, dwh_common, dm_common, src_ga4)
 - All datasets are created in the specified region
 - Datasets are configured to delete contents on destroy
 
