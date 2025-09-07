@@ -54,7 +54,7 @@ This repository contains Terraform configuration to create BigQuery datasets in 
 | Name | Description | Type | Default |
 |------|-------------|------|---------|
 | project_id | The GCP project ID | string | (required) |
-| region | The GCP region | string | "asia-northeast1" |
+| region | The GCP region | string | "US" |
 | dataset_ids | List of BigQuery dataset IDs to create | list(string) | ["src_common", "stg_common", "dwh_common", "dm_common", "src_ga4"] |
 
 ## Resources
@@ -79,6 +79,6 @@ Instead of using `terraform.tfvars`, you can set variables via environment varia
 
 ```bash
 export TF_VAR_project_id="your-project-id"
-export TF_VAR_region="asia-northeast1"
+export TF_VAR_region="US"
 terraform apply
 ```

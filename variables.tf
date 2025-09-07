@@ -7,7 +7,7 @@ variable "project_id" {
 variable "region" {
   description = "The GCP region"
   type        = string
-  default     = "asia-northeast1"
+  default     = "US"
 }
 
 variable "dataset_ids" {

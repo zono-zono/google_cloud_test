@@ -2,7 +2,7 @@
 # terraform.tfvars is automatically ignored by git
 
 project_id = "your-project-id-here"
-region     = "asia-northeast1"
+region     = "US"
 
 dataset_ids = [
   "src_common",
